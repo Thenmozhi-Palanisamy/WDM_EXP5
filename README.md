@@ -23,7 +23,7 @@ The Boolean model in Information Retrieval (IR) is a fundamental model used for 
 
 ### Program:
 
-
+````
 #developed by : Thenmozhi P
 #register no : 21222123116
 import numpy as np
@@ -85,7 +85,9 @@ class BooleanRetrieval:
             elif query[0] == 'not':
               results = results.difference(self.index[term])
       return results if results else set()
+````
 # Example usage:
+````
 if __name__ == "__main__":
     indexer = BooleanRetrieval()
 
@@ -109,7 +111,7 @@ if __name__ == "__main__":
     # Boolean search
     query1 = input("Enter your boolean query: ")
     print(f"Results for '{query1}': {indexer.boolean_search(query1)}")
-
+````
 ### Output:
 
 ![1](https://github.com/Thenmozhi-Palanisamy/WDM_EXP5/assets/95198708/fb7edd93-b8b6-41d1-b558-fd4331488f05)
